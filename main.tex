@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{chemfig}
+
+\geometry{
+  a4paper,
+  total={170mm,257mm},
+  left=20mm,
+  top=20mm,
+}
+
+\setchemfig{atom sep=2em, cram width=5pt}
+
+\title{Chemfig Molecules}
+\author{John Doe}
+\date{\today}
+
+\begin{document}
+\maketitle  
+\tableofcontents
+
+\input{molecules/polymers.tex}
+
+\end{document}
