@@ -1,1 +1,3 @@
-# Molecule-Structure-Formula-Collection-LaTeX-chemfig-
+# Molecule-Structure-Formula-Collection-LaTeX-chemfig
+
+Welcome to the Molecule Collection with Chemfig repository! This project is a curated collection of chemical structures designed and visualized using LaTeX and the chemfig package. Whether you’re a chemistry student, researcher, or LaTeX enthusiast, this repository provides ready-to-use molecular formulas for your documents, presentations, or learning materials.
