@@ -1,0 +1,140 @@
+\chapter{Carboxylic Acids}\label{app:carboxylic-acids}
+
+
+\section{Acetic Acid}\label{app:acetic-acid}
+\begin{lstlisting}
+\chemfig[]{H-C(-[2]H)(-[-2]H)-C(-[-1]OH)=[1]O}
+\end{lstlisting}
+
+
+\section{Acrylic Acid}\label{app:acrylic-acid}
+\begin{lstlisting}
+\chemfig[angle increment=30]{=^[-1]-[1](-[-1]OH)=[3,0.8]O}
+\end{lstlisting}
+
+
+\section{Benzoic Acid}\label{app:benzoic-acid}
+\begin{lstlisting}
+\chemfig{*6(-=-=(-(=[3.333]O)(-[0.666]OH))-=)}
+\end{lstlisting}
+
+
+\section{Fumaric Acid}\label{app:fumaric-acid}
+\begin{lstlisting}
+\chemfig{HO-[:-30](-[-2](=_[:-30](-[-2](=[:-30]O)(-[4.666]HO))))=[:30]O}
+\end{lstlisting}
+
+
+\section{Maleic Acid}\label{app:maleic-acid}
+\begin{lstlisting}
+\chemfig[baseline=(b.base)]{HO-[-0.66](=[0.666]O)(*6(-@{b}=-(-[2]OH)(=[-0.666]O)))}
+\end{lstlisting}
+
+
+\section{Oleic Acid}\label{app:oleic-acid}
+\begin{lstlisting}
+\chemfig[]
+{HO-[0.666](=[2,0.8]O)-[-0.666]-[0.666]-[-0.666]-[0.666]-[-0.666]-[0.666]-[-0.666]
+-[0.666]=_-[-0.666]-[0.666]-[-0.666]-[0.666]-[-0.666]-[0.666]-[-0.666]
+-[0.666]}
+\end{lstlisting}
+
+
+\chapter{polymers}\label{app:polymers}
+
+
+\section{Poly(Bisphenol A Carbonate)}\label{app:poly(bisphenol-a-carbonate)}
+\begin{lstlisting}
+\chemfig
+{\phantom{-}@{op}(-[0.666](=[2]O)(-[-0.666]O(-[0.666]*6(=-=(-[0.666](-[2.666]H_3C)(-[1.333]CH_3)(-[-0.666](*6(=-=(-[-0.666]O(-[
+    0.666]@{cl}))-=-))))-=-))))}
+    \polymerdelim[open xshift = 7.5pt, close xshift = 3.5pt, height = 45pt, depth = 10pt, delimiters={[]}, indice = \!\!n]{op}{cl}
+\end{lstlisting}
+
+
+\section{Polyurethane}\label{app:polyurethane}
+\begin{lstlisting}
+\chemfig[]
+{-[@{op,.5}]C(=[2]O)-N(-[-2]H)-*6(-=-(-C(-*6(=-=(-N(-[-2]H)-C(=[2]O)-O-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-O-[@{cl,0.5}])-=-))(-[
+    2]H)
+    (-[-2]H))=-=)}
+    \polymerdelim[height = 20pt, depth = 20pt, delimiters={[]}, indice = \!\!n]{op}{cl}
+\end{lstlisting}
+
+
+\chapter{Mass Spectrometry}\label{app:mass-spectrometry}
+
+
+\section{1-Propanol}\label{app:1-propanol}
+\begin{footnotesize}
+    \begin{lstlisting}
+\schemestart
+\chemname{\chemfig{H-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-\charge{90:1pt=\|,-90:1pt=\|}{O}-H}}{Propan-1-ol}
+\+
+\chemfig{\charge{45=$\scriptscriptstyle{-}$}{e}}
+\arrow(.mid east--.mid west)
+\chemname
+{\chemfig{H-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-\charge{115:1pt=\.,-90:1pt=\|,60:1pt=$\scriptscriptstyle{+}$}{O}-H}}
+{m/z\,=\,60}
+\+
+\chemfig{2\,\charge{45=$\scriptscriptstyle{-}$}{e}}
+\arrow(@c2--n1)[-70,1.5]
+\chemname{\chemfig{\charge{180:1pt=$\scriptscriptstyle{+}$}{C}(-[2]H)(-[-2]H)-\charge{90:1pt=\|,-90:1pt=\|}{O}-H}}{\phant
+\arrow(.mid east--.mid west)[0,0.7]
+\chemnameinit{}
+\chemname{\chemfig{C(-[3]H)(-[-3]H)=\charge{90:2pt=$\scriptscriptstyle{+}$,-90:1pt=\|}{O}-H}}{m/z\,=\,31}
+\chemnameinit{}
+\arrow(@c2--n2)[-100,5]
+\chemname{\chemfig{H-C(-[2]H)(-[-2]H)-\charge{90:2pt=$\scriptscriptstyle{+}$}{C}(-[-2]H)-\charge{0:1pt=\.}{C}(-[2]H)(-[-2]H)}}
+{m/z\,=\,42}\qquad
+\+\qquad
+\chemname{\chemfig{H_2O}}{$\Delta$m\,=\,18}
+\chemnameinit{}
+\arrow(@c2--n4)[225,3]
+\chemname
+{\chemfig{H-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-\charge{90:1pt=\|,-90:1pt=\|,0:2pt=$\scriptscriptstyle{+}$}{O}}}
+{m/z\,=\,59}\qquad
+\+
+\chemname{\chemfig{\charge{0:1pt=\.}{H}}}{$\Delta$m\,=\,1}
+\arrow(@n1--nn1)[-90,0.45,white]
+\chemname{\chemfig{H-C(-[2]H)(-[-2]H)-\charge{0:1pt=\.}{C}(-[2]H)(-[-2]H)}}{$\Delta$m\,=\,29}
+\schemestop
+    \end{lstlisting}
+\end{footnotesize}
+
+\newpage
+
+
+\section{Ethylbenzene}\label{app:ethylbenzene}
+%\begin{footnotesize}
+\begin{lstlisting}
+\schemestart
+    \chemname{\chemfig{*6((-H)-(-H)=(-H)-(-H)=(-[2](-[0.666]CH_3))-(-H)=(-H))}}{Ethylbenzol} \qquad
+    \+ \qquad
+    \chemfig{\charge{45=$\scriptscriptstyle{-}$}{e}}
+    \arrow(.mid east--.mid west)
+    \chemname{\chemfig{*6(\charge{30:3pt=\.}{}(-H)-(-H)=(-H)-(-H)=(-[2](-[0.666]CH_3))-\charge{-30:3pt=$\scriptscriptstyle{+}$}{}(-H
+)-(-H))}}{m/z\,=\,106} \qquad
+    \+ \qquad
+    \chemfig{2\,\charge{45=$\scriptscriptstyle{-}$}{e}}
+    \arrow(@c2--n1)[-60,1.5]
+    \chemname{\chemfig{**[0,360,dash pattern=on 2pt off 2pt]7(\charge{25:18.5pt=\+}{}(-H)-(-H)-(-H)-(-H)-(-H)-(-H)-(-H)-(-H))}}{m/z\,=\,91}
+    \qquad \+ \qquad % +
+    \chemname{\chemfig{\charge{180:2pt=\.}{C}H_3}}{$\Delta$m\,=\,15}
+    \arrow(@n1--m2)[-90,1]
+    \chemname{\chemfig{**[0,360,dash pattern=on 2pt off 2pt]5(\charge{35:13pt=\+}{}(-H)-(-H)-(-H)-(-H)-(-H)-(-H)-(-H)-)}}{m/z\,=\,65}
+    \qquad \+ \qquad
+    \chemname{\chemfig{C_2H_2}}{$\Delta$m\,=\,26}
+    \arrow(@c2--n4)[225,2.5]
+    \chemname{\chemfig{*6((-H)-(-H)=(-H)-(-H)=\charge{90:3pt=$\scriptscriptstyle{+}$}{}-(-H)=(-H))}}{m/z\,=\,77}
+    \qquad \+ \qquad
+    \chemname{\chemfig{\charge{180:2pt=\.}{C}_2H_5}}{$\Delta$m\,=\,29}
+    \arrow(@n4--m2)[-90,1]
+    \chemname{\chemfig{*4((-H)-(-H)=(-H)-\charge{115:3pt=$\scriptscriptstyle{+}$}{}=)}}{m/z\,=\,51}
+    \qquad \+ \qquad
+    \chemname{\chemfig{C_2H_2}}{$\Delta$m\,=\,26}
+\schemestop
+\end{lstlisting}
+%\end{footnotesize}
+
+
